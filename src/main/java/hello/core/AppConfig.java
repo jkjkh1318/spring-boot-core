@@ -12,8 +12,8 @@ import hello.core.order.OrderServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-// 구성영역, 설정정보
-// 변경시 구성 영역만 영향을 받고, 사용 영역은(client code-*Impl.java 등) 전혀 영향을 받지 않는다
+// 구성 영역, 설정 정보
+// 변경시 구성 영역만 영향을 받고, 사용 영역 (client code, *Impl.java 등)은 전혀 영향을 받지 않는다
 @Configuration //: 싱글톤을 보장하기 위해서 !반드시! 명시해야 한다
 public class AppConfig {
 

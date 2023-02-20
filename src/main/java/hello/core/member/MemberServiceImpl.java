@@ -1,5 +1,6 @@
 package hello.core.member;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,7 +13,10 @@ public class MemberServiceImpl implements MemberService{
     // DIP 준수
     private final MemberRepository memberRepository;
 
-    public MemberServiceImpl(MemberRepository memberRepository) {
+    @Autowired //@Component 사용할 경우 거의 필수로 사용
+    //MemberRepository 유형을 자동으로 주입해준다
+    //ac.getBean(MemberRepository.class)와 같은 역할을 해 준다
+    public MemberServiceImpl(MemberRepository memberRepository)  {
         this.memberRepository = memberRepository;
     }
 

@@ -1,5 +1,8 @@
 package hello.core.member;
 
+import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Component;
+
 public class Member {
 
     //TODO long, Long 차이...?
